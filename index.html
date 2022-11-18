@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card decline/grace Lightbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- --------------------- styles begin -------------------- -->
+    <style> 
+        .modal{
+            display: block;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content{
+            background-color: white;
+            text-align: center;
+            margin:auto;
+            padding: 20px;
+            border: 1px solid black;
+            width: 300px;
+            height: 500px;
+            max-width:80%
+        }
+        .logo{
+            width:160px;
+            margin-top: 25px;
+        }
+        .first-paragraph{
+            width: 300px;
+            height: 29px;
+            text-align: center;
+            font: normal normal normal 18px/34px Noto Sans;
+            letter-spacing: 0.54px;
+            color: #292929;
+            margin: 18px auto;
+        }
+        .second-paragraph{
+            width: 230px;
+            height: 138px;
+            text-align: center;
+            font: normal normal bold 20px/28px Noto Sans;
+            letter-spacing: -0.4px;
+            color: #292929;
+            margin:0 auto -37px auto;
+        }
+        .third-paragraph{
+            width: 260px;
+            height: 70px;
+            text-align: center;
+            font: normal normal 16px/24px Noto Sans;
+            font-weight: 500;
+            letter-spacing: -0.32px;
+            color: #292929;
+            margin:0 auto 15px auto;
+        }
+        .update-button{
+            width: 250px;
+            height: 50px;
+            background: #31409F;
+            border-radius: 2px;
+            margin:0 auto -14px auto;
+            padding-top: 1px;
+            cursor:pointer;
+        }
+        .update-button .text{
+            text-align: center;
+            font: normal normal bold 14px/36px Noto Sans;
+            letter-spacing: 0.7px;
+            color: #FFFFFF;
+            margin-top: 6px;
+        }
+        .close{
+            top: 370px;
+            left: 95px;
+            width: 110px;
+            height: 17px;
+            text-align: center;
+            text-decoration: underline;
+            font: normal normal bold 12px/36px Noto Sans;
+            letter-spacing: 0px;
+            color: #31409F;
+            opacity: 1;
+        }
+        .fourth-paragraph{
+            width: 230px;
+            height: 57px;
+            margin: auto;
+        }
+        .fourth-paragraph .text{
+            text-align: center;
+            font: normal normal bold 12px/20px Noto Sans;
+            letter-spacing: -0.24px;
+            color: #292929;
+            margin-top:15px;
+        }
+
+        @media only screen and (max-width: 280px){
+            .first-paragraph{
+                width: 200px;
+            }
+            .third-paragraph{
+                width: 230px;
+                font: normal normal 14px/24px Noto Sans;
+            }
+            .update-button{
+                width: 220px;
+            }
+        }
+        @media only screen and (max-height: 600px){
+            .modal{
+                padding-top: 30px;
+            }
+            .logo{
+                margin-top: 15px;
+            }
+            .first-paragraph{
+                margin: 12px auto;
+            }
+        }
+    </style>
+    <!-- --------------------- styles end -------------------- -->
+
+</head>
+<body>
+    <!-- Regular contents -->
+    <h1>Publication contents</h1>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem magni fuga sint quo iste eum corrupti? Voluptas distinctio quidem voluptates non quae tempore eius quis natus praesentium est aut totam, magnam reprehenderit dolores consequatur ab aspernatur voluptatibus rem, sint autem rerum reiciendis dolore. Corporis expedita, optio quia autem quisquam consequatur sunt tempora nulla exercitationem! Saepe, illum amet, facilis voluptatem obcaecati iste modi nulla rerum veritatis impedit aspernatur animi itaque iusto culpa? Dolore pariatur dignissimos voluptates iusto. Natus facere maiores voluptates fuga iure illo, sint rem alias delectus maxime cum accusantium veritatis corrupti at vel exercitationem eos quam. Deserunt illum consequuntur odit ipsa dolor repellendus facilis saepe quae, dolorem animi vel quam, dignissimos quod id non ut doloribus inventore. Odio, totam commodi tempore aliquid debitis, ratione nostrum hic quibusdam molestias eveniet minima nobis exercitationem, temporibus ad quasi laudantium alias. Laboriosam cumque enim assumenda dolorem, magnam eaque eos nam in accusantium ab libero maiores voluptatum nobis inventore, nesciunt consequuntur repellendus consequatur nulla ratione id quo veniam. Ad consequatur ipsum officia! Quo modi quasi vel, in, molestiae, aliquid facilis fuga blanditiis porro totam recusandae eius? Fugit eaque, animi, minus architecto iste, dolore necessitatibus eos temporibus id nostrum qui fugiat eveniet ad? Eos odio animi fuga eum, beatae accusamus perferendis ea facere libero placeat sapiente officiis corporis commodi, nostrum blanditiis excepturi officia? Veritatis deleniti ad ea commodi facilis adipisci eum perspiciatis consequatur a recusandae quia voluptatum ducimus vel reprehenderit laboriosam, quis repudiandae earum, dolores facere numquam tenetur possimus assumenda quisquam. Architecto debitis earum minus voluptates nemo hic id excepturi labore. Incidunt fugiat assumenda, quisquam doloribus veritatis minus? Natus debitis possimus numquam architecto maiores id blanditiis soluta delectus, tenetur, maxime nostrum tempora explicabo ab consectetur ratione dolorem veritatis beatae atque molestiae inventore quas iure voluptates quam voluptate! Laudantium adipisci eum temporibus accusantium? Corporis harum dolorum aliquid reprehenderit. Minus placeat neque illum nostrum, perferendis corporis ratione facilis maxime rem enim saepe et qui. Possimus odit consequuntur, repellat beatae dolorem quos fugit deleniti itaque? Ea amet facilis cum hic reprehenderit ducimus. Ab blanditiis architecto veritatis dolor culpa omnis cum deserunt, earum vitae rerum eligendi porro voluptatum aliquid odit quo perferendis dolorem, tempora iste laudantium autem. Illum deserunt numquam quaerat, dolore ipsum libero beatae nulla itaque nisi totam, impedit, incidunt ullam. Cumque accusantium odio nihil commodi itaque eos soluta, vel iure consectetur, necessitatibus earum maxime. Vitae, praesentium dignissimos consectetur unde quos, quam explicabo repudiandae ex sed dolores nobis asperiores, hic iusto sequi! Natus dolorem cumque tempore magni quos ad voluptatibus excepturi alias ullam tempora accusamus ex magnam, sed unde quae, error voluptatum aspernatur at minus expedita velit et ab! Sunt nostrum, ex maxime fugiat ea deleniti nulla iure reprehenderit libero soluta animi, eos quam impedit quidem est in recusandae quis blanditiis ducimus? Error illo dolores consequuntur. Id, recusandae ratione laboriosam animi iure voluptatum culpa soluta commodi necessitatibus sapiente? Sequi, vero! Autem et architecto beatae dignissimos voluptate aperiam delectus animi sint quam, magnam tempora nisi consectetur quibusdam aliquid. Distinctio officia temporibus saepe, exercitationem nemo atque. Iure mollitia sequi eum!
+    <!-- Trigger the modal -->
+    <br><a href="#" id="modalTrigger">show modal</a>
+    <!-- Modal Content -->
+    <div class="modal" id="lightbox">
+        <div class="modal-content">
+            <img src="https://media.mcclatchy.com/email-assets/global/logos/miami-black.png" alt="MiamiHerald Logo" class="logo">
+            <div class="first-paragraph">
+                <div class="text">
+                    WE'RE SORRY!
+                </div>
+            </div>
+            <div class="second-paragraph">
+                <div class="text">
+                    We are experiencing difficulty processing your payment.
+                </div>
+            </div>
+            <div class="third-paragraph">
+                <div class="text">
+                    Please update your information to ensure uninterrupted access to miamiherald.com
+                </div>
+            </div>
+            <div class="update-button">
+                <div class="text">
+                    UPDATE PAYMENT METHOD
+                </div>
+            </div>
+            <br><a href="#" id="close" class="close">REMIND ME LATER</a>
+            <div class="fourth-paragraph">
+                <div class="text">
+                    If you have updated your payment method within the last 48 hours, please disregard this message.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------- javascript begin -------------------- -->
+    <script>
+        var modal = document.getElementById('lightbox')
+        var trigger = document.getElementById("modalTrigger")
+        var close = document.getElementById("close")
+        trigger.onclick = function() {
+            modal.style.display = "block";
+        }
+        close.onclick = function() {
+            modal.style.display = "none"
+        }
+    </script>
+    <!-- --------------------- javascript end -------------------- -->
+</body>
+</html>
